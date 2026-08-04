@@ -7,7 +7,7 @@ disposable-email domain, using the community-maintained blocklist
 
 One plugin:
 
-- **Disposable Email Check** (`run.vineyard.plugins.disposable_email_check`) — selects an
+- **Disposable Email Check** (`run.vineyard.plugins.disposable_email`) — selects an
   `identity.email_address` node, extracts the domain from its `email` value, and sets
   `data.is_disposable = true` (in the blocklist) or `false` (not in the blocklist) on that
   same node. Nothing is created; the check is a single `node:update`.

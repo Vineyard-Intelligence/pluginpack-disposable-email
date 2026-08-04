@@ -30,7 +30,7 @@
   },
   "plugins": [
     {
-      "identifier": "run.vineyard.plugins.disposable_email_check",
+      "identifier": "run.vineyard.plugins.disposable_email",
       "content_type": "vineyard:plugin",
       "name": "Disposable Email Check",
       "version": "1.0.0",
