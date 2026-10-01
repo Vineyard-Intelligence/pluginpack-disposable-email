@@ -2,8 +2,8 @@
   "identifier": "run.vineyard.pluginpacks.disposable_email",
   "content_type": "vineyard:pluginpack",
   "name": "Disposable Email",
-  "version": "1.1.0",
-  "description": "Checks whether each selected email address belongs to a known disposable-email domain (74k+ domain blocklist, subdomain-aware), and sets the node's is_disposable flag to true or false. Runs the whole selection in one pass — the blocklist is fetched once and reused for every address.",
+  "version": "1.1.1",
+  "description": "Checks email addresses against the disposable/disposable-email-domains blocklist (CC0).",
   "author": {
     "name": "VINEYARD",
     "url": "https://vineyard.run"
@@ -33,8 +33,8 @@
       "identifier": "run.vineyard.plugins.disposable_email",
       "content_type": "vineyard:plugin",
       "name": "Disposable Email Check",
-      "version": "1.1.0",
-      "description": "Checks whether each selected email address belongs to a known disposable-email domain (74k+ domain blocklist, subdomain-aware), and sets the node's is_disposable flag to true or false. Runs the whole selection in one pass — the blocklist is fetched once and reused for every address.",
+      "version": "1.1.1",
+      "description": "Checks each selected Email Address's domain, including its parent domains, against the disposable-email-domains blocklist and sets is_disposable (true/false) on the node. Creates no nodes.",
       "icon": "mail-x",
       "platforms": {
         "primary": "web",
