@@ -18,15 +18,8 @@
     },
     "desktop": {
       "runtime": "sandbox-js",
-      "entry": "dist/pack.mjs",
-      "min_app_version": "0.1.0"
+      "entry": "dist/pack.mjs"
     }
-  },
-  "distribution": {
-    "kind": "git",
-    "repository": "https://github.com/Vineyard-Intelligence/pluginpack-disposable-email",
-    "ref": "v1.1.0",
-    "path": "plugins/disposable-email.manifest.json"
   },
   "plugins": [
     {
@@ -44,8 +37,7 @@
         },
         "desktop": {
           "runtime": "sandbox-js",
-          "entry": "dist/pack.mjs",
-          "min_app_version": "0.1.0"
+          "entry": "dist/pack.mjs"
         }
       },
       "io": {
