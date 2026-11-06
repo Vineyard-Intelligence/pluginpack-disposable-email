@@ -25,10 +25,21 @@ One plugin:
 ## Layout
 
 - `plugins/disposable-email.manifest.json` — the pack manifest (catalog entry source).
+- `src/` — the source of the bundle.
 - `dist/pack.mjs` — the runnable bundle.
 
 Data: `disposable/disposable-email-domains` — <https://github.com/disposable/disposable-email-domains>
 (CC0 / public domain).
+
+## Building from source
+
+`src/` is the source of `dist/pack.mjs`. The build pins esbuild, so the published bundle can be
+checked against the source:
+
+```bash
+node build.mjs
+git diff --exit-code dist/pack.mjs
+```
 
 ## License
 
